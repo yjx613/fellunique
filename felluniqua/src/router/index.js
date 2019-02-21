@@ -5,7 +5,7 @@ import Classify from "../components/classify"
 import Brand from "../components/brand"
 import Shoppingcart from "../components/shoppingcart"
 import My from "../components/my"
-// import Err from "../components/error/err.vue"
+import Err from "../components/error/err.vue"
 Vue.use(Router)
 
 export default new Router({
@@ -59,9 +59,9 @@ export default new Router({
 				requireAuth:true
       }
     },
-    // {
-    //   path:"**",
-    //   component:Err
-    // }
+    {
+      path:"**",
+      component:Err
+    }
   ]
 })
